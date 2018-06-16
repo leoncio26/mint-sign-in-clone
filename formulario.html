@@ -2,10 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro</title>
+    <title>Sign up</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
     <header>
         <div>
             <div>
@@ -16,15 +17,52 @@
         <a class="btn" href="#"><span></span>Sign in</a>
         
     </header>
-    <main>
-        <div class="div-form">
-            <form>
 
+    <main>
+        <img id="logo" src="img/logo.png" alt="logo">
+        <div class="div-form">
+            <!--Serviços-->
+            <div class="others-services">
+                <a href="#"><img src="img/tax.png" alt="turbotax"></a>
+                <a href="#"><img src="img/quick.png" alt="turbotax"></a>
+                <a href="#"><img src="img/mint.png" alt="turbotax"></a>
+            </div>
+            <hr>
+            <!--Textos-->
+            <p class="bordao">
+                    One Account. Everything Intuit.
+            </p>
+            <p>
+                    Create an account for all of Intuit's products 
+                    including Mint. <a href="#">Learn more</a>
+            </p>
+            <!--Formulário-->
+            <form>
+                <!--Email address-->
+                <label for="user_email">Email address</label>
+                <input type="email" name="user_email" id="user_email">
+                <!--Phone-->
+                <label for="user_phone">Phone(recommended)</label>
+                <input type="tel" name="user_phone" id="user_phone">
+                <span class="aviso-phone">Standard call, messaging or data rates may apply.</span>
+                <!--Password-->
+                <label for="user_password">Password</label>
+                <input type="password" name="user_password" id="user_password">
+                <!--Creat Account button-->
+                <input type="submit" class="btn-submit" value="Create Account">
             </form>
+            <!--Footer da tela de Sign up-->
+            <p class="form-footer">
+                    By clicking Create Account, you agree to our
+                    <a href="#">License Agreement</a> and have read and acknowledge
+                    our <a href="#">Privacy Statement</a>.
+            </p>
         </div>
     </main>
-    <footer>
 
+    <footer>
+        
     </footer>
+    
 </body>
 </html>
